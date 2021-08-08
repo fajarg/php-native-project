@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(img/background2.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.header-utama {
+    width: 100%;
+    height: 200vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(img/background2.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+.logo {
+    cursor: pointer;
+    position: absolute;
+    margin-left: 8px;
+    top: 5px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 5px 2px;
+    text-transform: uppercase;
+}
+
+/* nav ul li a:hover {
+    border-bottom: 1px solid cyan;
+} */
+
+nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(8, 168, 115);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.form {
+    margin-top: -30px;
+}
+
+.content {
+    max-width: 500px;
+    color: white;
+    margin-top: 13%;
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 70px;
+    letter-spacing: 1px;
+    margin: 15px 0;
+}
+
+p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+span {
+    color: rgb(8, 168, 115);
+}
+
+button {
+    width: 130px;
+    padding: 12px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(8, 168, 115);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.buttons span {
+    background: rgb(8, 168, 115);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+/* button:hover {
+    color: black;
+} */
+
+button:hover span {
+    width: 110%;
+}
+
+/* button:hover {
+    border: 3px;
+} */
+
+.sidebar {
+    width: 80px;
+    height: 100vh;
+    background: rgb(8, 168, 115);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.social-links {
+    width: 80px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.social-links img {
+    height: 25px;
+    display: block;
+    margin: 25px auto;
+    cursor: pointer;
+}
+
+.loginbox {
+    width: 320px;
+    height: 450px;
+    background-color: black;
+    color: rgb(8, 168, 115);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 5px 4px 10px rgb(8, 168, 115);
+    padding: 0 40px;
+}
+
+.h1_login {
+    margin-bottom: 60px;
+    font-size: 40px;
+}
+
+.h1_reg {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+
+.loginbox label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox .loginInput input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox .loginInput input[type="text"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1px solid rgb(8, 168, 115);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.loginbox .loginInput {
+    margin-bottom: 10px;
+}
+
+.btn-button {
+    text-align: center;
+}
+
+.btn-button-reg {
+    margin-top: -15px;
+    text-align: center;
+}
+
+
+
+
+
+/* Halaman utama */
+
+.form input[type="text"] {
+    border: 2px solid rgb(8, 168, 115);
+    background: transparent;
+    outline-style: solid;
+    outline: rgb(8, 168, 115);
+    height: 25px;
+    color: white;
+    font-size: 16px;
+    padding: 2px 20px;
+}
+
+.form button {
+    width: 80px;
+    padding: 7px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(8, 168, 115);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.form span {
+    background: rgb(8, 168, 115);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+/* button:hover {
+    color: black;
+} */
+
+.form button:hover span {
+    width: 110%;
+}
+
+
+/* tambah data */
+.box {
+    width: 620px;
+    height: 510px;
+    background-color: black;
+    color: rgb(8, 168, 115);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 5px 4px 10px rgb(8, 168, 115);
+    padding: 0 40px;
+    margin-top: 17px;
+}
+
+.box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.box .tambahInput input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.box .tambahInput input[type="text"] {
+    border: none;
+    border-bottom: 1px solid rgb(8, 168, 115);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.btn-tambah {
+    text-align: center;
+}
+
+/* halaman utama */
+.judul {
+    width: 900px;
+    height: 80px;
+    background-color: rgb(8, 168, 115);
+    margin: auto;
+    box-shadow: 0px 0px 3px 1px rgb(8, 168, 115);
+    text-align: center;
+}
+
+.h1-utama {
+    font-size: 30px;
+    color: black;
+    padding-top: 5px;
+}
+
+table {
+    margin: 20px auto;
+    color: black;
+    width: 900px;
+    background-color: rgb(8, 168, 115);
+    box-shadow: 0px 0px 3px 1px rgb(8, 168, 115);
+}
+
+table .head {
+    background-color: black;
+    color: rgb(8, 168, 115);
+}
+
+table .tr-body {
+    background-color: rgb(8, 168, 115);
+    color: black;
+}
