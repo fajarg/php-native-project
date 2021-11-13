@@ -1,3 +1,4 @@
+<!-- delete method -->
 <?php
 	$id=$_GET["id"];
 	$conn=mysqli_connect("localhost","root","","db_gunung");
